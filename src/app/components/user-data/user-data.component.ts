@@ -27,7 +27,7 @@ getSearchedUser(searchTerm) {
   );
 }
 
-/*ngOnInit(): void {
+ngOnInit(): void {
   this.getSearchedUser('scrupycoco');
   // tslint:disable-next-line:prefer-const
   let particlesJS;
