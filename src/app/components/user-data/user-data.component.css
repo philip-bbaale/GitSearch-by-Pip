@@ -1,0 +1,21 @@
+.card{
+    margin: 30px;
+    border-radius: 50px;
+}
+.card-body h1{
+    text-align: center;
+}
+.card_image{
+    height: auto;
+    width: auto;
+    border-radius: 50px;
+}
+.user_numbers{
+    text-align: center;
+}
+.user_numbers a{
+    margin: 10px;
+}
+.about_person{
+    float: right;
+}
