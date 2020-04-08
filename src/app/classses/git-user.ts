@@ -1,5 +1,5 @@
 export class GitUser {
-     /*// tslint:disable-next-line:variable-name
+     // tslint:disable-next-line:variable-name
      avatar_url: any;
      login: any;
      bio: any;
