@@ -24,7 +24,7 @@ export class GetUserService {
   public_repos: string;
   }
   
- /* return new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
   this.user = [];
   // tslint:disable-next-line:max-line-length
   this.http.get<data>(this._URL + searchTerm + this.token).toPromise().then(
