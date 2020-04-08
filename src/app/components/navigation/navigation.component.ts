@@ -14,7 +14,7 @@ searchTerm: string;
 emmitUser() {
   this.searchEmmiter.emit(this.searchTerm);
   console.log(this.searchTerm)
-}1111
+}
 
   constructor() { }
 
