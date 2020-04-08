@@ -5,13 +5,13 @@ import {GitUser} from '../classses/git-user'
 @Injectable({
   providedIn: 'root'
 })
-/*export class GetUserService {
+export class GetUserService {
 
   user: GitUser[] = [];
   _URL = 'https://api.github.com/users/';
   token = '?access_token=23028f7a9fd8fad9a4a7e7d633588a079f40e019';
 
-  constructor(private http: HttpClient) {
+  /*constructor(private http: HttpClient) {
   }
 
   searchMyUser(searchTerm: string) {
