@@ -5,7 +5,7 @@ import {GitUser} from '../classses/git-user'
 @Injectable({
   providedIn: 'root'
 })
-export class GetUserService {
+/*export class GetUserService {
 
   user: GitUser[] = [];
   _URL = 'https://api.github.com/users/';
