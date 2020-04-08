@@ -9,12 +9,12 @@ export class NavigationComponent implements OnInit {
 
 searchTerm: string;
 
-/*@Output() searchEmmiter = new EventEmitter<any>();  
+@Output() searchEmmiter = new EventEmitter<any>();  
 
 emmitUser() {
   this.searchEmmiter.emit(this.searchTerm);
   console.log(this.searchTerm)
-}*/
+}
 
   constructor() { }
 
