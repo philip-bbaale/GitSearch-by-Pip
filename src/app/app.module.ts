@@ -10,12 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { UserDataComponent } from './components/user-data/user-data.component';
+import { UserRepoComponent } from './components/user-repo/user-repo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    UserDataComponent
+    UserDataComponent,
+    UserRepoComponent
   ],
   imports: [
     BrowserModule,
