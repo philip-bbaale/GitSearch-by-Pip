@@ -1,6 +1,7 @@
+<ng-progress></ng-progress>
 <app-navigation (searchEmmiter)="getSearchedUser($event)"></app-navigation>
 
-    
+
 <div class="container">
     <div class="card"  *ngFor="let u of user">
         <img src="{{u.avatar_url}}" class="card-img-top card_image " alt="...">
