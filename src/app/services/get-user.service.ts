@@ -11,10 +11,10 @@ export class GetUserService {
   _URL = 'https://api.github.com/users/';
   token = '?access_token=23028f7a9fd8fad9a4a7e7d633588a079f40e019';
 
-  /*constructor(private http: HttpClient) {
+  constructor(private http: HttpClient) {
   }
 
-  searchMyUser(searchTerm: string) {
+  /*searchMyUser(searchTerm: string) {
   // tslint:disable-next-line:class-name
   interface data {
   login: string;
