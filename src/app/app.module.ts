@@ -19,7 +19,7 @@ import { UserDataComponent } from './components/user-data/user-data.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
