@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
+import {environment } from '../../environments/environment';
 import {GitUser} from '../classses/git-user'
 
 @Injectable({
@@ -8,9 +9,9 @@ import {GitUser} from '../classses/git-user'
 export class GetUserService {
 
   user: GitUser[] = [];
-  _URL = 'https://api.github.com/users/';
-  token = '?access_token=23028f7a9fd8fad9a4a7e7d633588a079f40e019';
-
+  _URL = 'https://api.github.com/users/'
+  token = '?access_token=23028f7a9fd8fad9a4a7e7d633588a079f40e019'
+  
   constructor(private http: HttpClient) {
   }
 
@@ -27,7 +28,8 @@ export class GetUserService {
   return new Promise((resolve, reject) => {
   this.user = [];
   // tslint:disable-next-line:max-line-length
-  this.http.get<data>(this._URL + searchTerm + this.token).toPromise().then(
+  /*this.http.get<data>( environment._URL + searchTerm + environment.token).toPromise().then(*/
+  this.http.get<data>( this._URL + searchTerm + this.token).toPromise().then(
   (results) => {
   // @ts-ignore
   this.user.push(results);
