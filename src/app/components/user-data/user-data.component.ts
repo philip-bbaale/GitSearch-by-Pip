@@ -9,7 +9,7 @@ import { GetUserService } from '..//../services/get-user.service'
 })
 export class UserDataComponent implements OnInit {
 
-user: GitUser[];
+/*user: GitUser[];
 particlesJS: any;
 
 constructor(private service: GetUserService) {
