@@ -12,10 +12,10 @@ export class UserDataComponent implements OnInit {
 user: GitUser[];
 particlesJS: any;
 
-/*constructor(private service: GetUserService) {
+constructor(private service: GetUserService) {
 }
 
-getSearchedUser(searchTerm) {
+/*getSearchedUser(searchTerm) {
   this.service.searchMyUser(searchTerm).then(
   (success) => {
   this.user = this.service.user;
