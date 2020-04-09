@@ -1,9 +1,13 @@
 
 
-<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-    <div class="card-header">Header</div>
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;" *ngFor="let u of user">
+    <div class="card-header">{{u.repos_url}}</div>
     <div class="card-body">
-      <h5 class="card-title">Success card title</h5>
+      <h5 class="card-title">{{u.name}}</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text">{{u.repos_url.name}}</p>
+      <p class="card-text">{{u.repos_url.created_a}}</p>
+      <p class="card-text">{{u.repos_url.language}}</p>
+      <a href="{{u.repos_url.html_url}}" class="btn btn-warning">See on Github</a>
     </div>
-</div>qqqqq
+</div>

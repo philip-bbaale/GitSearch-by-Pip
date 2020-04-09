@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { GitUser } from '../../classses/git-user';
+import { GetUserService } from '..//../services/get-user.service'
 
 @Component({
   selector: 'app-user-repo',
@@ -7,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserRepoComponent implements OnInit {
 
-  constructor() { }
-
+  @Input() user: GitUser[];
+  
   ngOnInit(): void {
   }
 

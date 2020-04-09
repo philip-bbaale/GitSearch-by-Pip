@@ -1,4 +1,4 @@
-<ng-progress></ng-progress>
+
 <app-navigation (searchEmmiter)="getSearchedUser($event)"></app-navigation>
 
 
@@ -11,8 +11,9 @@
             <h5 class="card-title">Created on {{u.created_at|date}}</h5>
             <div class="user_numbers">
                 <a href="{{u.followers_url}}" class="btn btn-dark">Followers {{u.followers}}</a>
-                <a href="{{u.following_url}}" class="btn btn-dark">Following {{u.following}}</a>
+                <!--a href="{{u.following_url}}" class="btn btn-dark">Following {{u.following}}</a-->
                 <a href="{{u.repos_url}}" class="btn btn-dark">Repositories {{u.public_repos}}</a>
+                <app-user-repo [user]='user'></app-user-repo>
             </div>
             <div class="about_person">
                 <h3>{{u.location}}</h3>
@@ -23,3 +24,4 @@
         </div>
       </div>
 </div>
+<!-- routerLink="UserRepo" routerLinkActive='active'     -->
