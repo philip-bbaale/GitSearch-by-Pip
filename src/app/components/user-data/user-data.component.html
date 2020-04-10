@@ -12,8 +12,8 @@
             <div class="user_numbers">
                 <a href="{{u.followers_url}}" class="btn btn-dark">Followers {{u.followers}}</a>
                 <!--a href="{{u.following_url}}" class="btn btn-dark">Following {{u.following}}</a-->
-                <a href="{{u.repos_url}}" class="btn btn-dark">Repositories {{u.public_repos}}</a>
-                <app-user-repo [user]='user'></app-user-repo>
+                <!--a href="{{u.repos_url}}" class="btn btn-dark">Repositories {{u.public_repos}}</a-->
+                <app-user-repo [u]='u'></app-user-repo>
             </div>
             <div class="about_person">
                 <h3>{{u.location}}</h3>

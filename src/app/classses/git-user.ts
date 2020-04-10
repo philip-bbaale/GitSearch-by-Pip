@@ -12,4 +12,5 @@ export class GitUser {
      created_at: Date;
      // tslint:disable-next-line:variable-name
      public_repos: any;
+     repos_url:any;
 }

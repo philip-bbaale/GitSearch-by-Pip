@@ -19,7 +19,7 @@ getSearchedUser(searchTerm) {
   this.service.searchMyUser(searchTerm).then(
   (success) => {
   this.user = this.service.user;
-  console.log(this.user);
+  //console.log(this.user);
   },
   (error) => {
   console.log(error);
