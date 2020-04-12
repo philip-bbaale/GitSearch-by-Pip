@@ -32,7 +32,7 @@ getSearchedRepo(repoLink) {
 }
 
 ngOnInit(): void {
-  //this.getSearchedRepo('scrupycoco');
+  this.getSearchedRepo('scrupycoco');
   // tslint:disable-next-line:prefer-const
   let particlesJS;
   particlesJS.load('particles-js', 'particles.json', null);

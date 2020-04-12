@@ -1,16 +1,16 @@
 
+<div>
+<a (click)="getSearchedRepo(u.repos_url)" class="btn btn-dark text-light">Repositories {{u.public_repos}}</a>
+</div>
 
-<a (click)="getSearchedRepo(u.repos_url)" class="btn btn-dark">Repositories {{u.public_repos}}</a>
-
-<div *ngFor="let r of repo">
-  <p>{{r.name}}</p>
-  <!--div class="card text-white bg-success mb-3" style="max-width: 18rem;" >
-    <div class="card-header">{{r.name}}</div>
+<div  *ngFor="let r of repo[0]; let i=index" id="works">
+  <div class="card text-white bg-dark" style="max-width: 20rem;" >
+    <div class="card-header">Project Name:  <span class="text-primary">{{r.name}}</span></div>
     <div class="card-body">
-      <h5 class="card-title">{{r.language}}</h5>
-      <p class="card-text">{{r.created_at}}</p>
-      <a href="{{r.html_url}}" class="btn btn-warning">See on Github</a>
+      <h5 class="card-title">Main language: <span class="text-warning">{{r.language}}</span></h5>
+      <p class="card-text">Date created: <span class="text-info">{{r.created_at|date}}</span></p>
+      <a href="{{r.html_url}}" class="btn btn-outline-success">See on Github</a>
     </div>
-</div-->
+  </div>
 </div>
 

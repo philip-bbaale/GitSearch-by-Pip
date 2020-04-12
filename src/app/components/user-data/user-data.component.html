@@ -9,12 +9,11 @@
             <h1 class="card-title mx-auto">{{u.name}}</h1>
             <h3 class="card-title">{{u.login}}</h3>
             <h5 class="card-title">Created on {{u.created_at|date}}</h5>
+            <button type="button" class="btn btn-outline-dark">Followers {{u.followers}}</button>
+            <button type="button" class="btn btn-outline-dark">Following {{u.following}}</button>
             <div class="user_numbers">
-                <a href="{{u.followers_url}}" class="btn btn-dark">Followers {{u.followers}}</a>
-                <!--a href="{{u.following_url}}" class="btn btn-dark">Following {{u.following}}</a-->
-                <!--a href="{{u.repos_url}}" class="btn btn-dark">Repositories {{u.public_repos}}</a-->
                 <app-user-repo [u]='u'></app-user-repo>
-            </div>
+            </div>   
             <div class="about_person">
                 <h3>{{u.location}}</h3>
                 <h3>{{u.bio}}</h3>
