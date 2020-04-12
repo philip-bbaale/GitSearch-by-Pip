@@ -17,7 +17,8 @@
 
 # Setup instructions:
 > Search by username.
-* See Followers, Following & Repositories.
+* See Followers & Following 
+* Click Repositories to see them.
 * You can also view the user on Github.
 
 # Technologies used: 
